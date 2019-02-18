@@ -49,15 +49,21 @@ dispatch.on("load_chart", function (chart_data) {
 
     let new_depts = selectedDeptArray;
 
-    let new_chart_data_1 = _.groupBy(_.filter(chart_data[start_fol][start_reg][start_Q], function (answer) {
-        return _.contains(new_depts, answer.final_dept_e);
-    }), 'question_value');
+    // console.log("new_depts: " + new_depts.length);    
+
+    //Filter by selected departments, then group objects by answer (aka question_value)
+    //For me, I will need to change this and do all my conditions inside the filter function, then group by category
+    let new_chart_data_1 = _.groupBy(_.filter(chart_data[start_year], function (answer) {
+        return _.contains(new_depts, answer.department);
+    }), 'type');
+
+    // console.log("new_chart_data_1: " + JSON.stringify(new_chart_data_1));
 
 
     let new_chart_data = _.map(new_chart_data_1, function (value) {
 
         let mapped = _.map(value, function (dept) {
-            return _defineProperty({}, dept.final_dept_e, dept.shr_w_resp);
+            return _defineProperty({}, dept.department, dept.contracts_value);
         });
 
         let tempx1 =  _.extend.apply(null, mapped);
@@ -70,10 +76,13 @@ dispatch.on("load_chart", function (chart_data) {
         // }]));
 
         return _.extend(tempx1 , {
-            Answer: value[0].question_value,
-            Sorter: value[0].sorter
+            Answer: value[0].type,
+            //Sorter: value[0].sorter
         });
     });
+
+    //console.log("new_chart_data: " + JSON.stringify(new_chart_data));
+
 
     if(new_chart_data.length == 0) {
         d3.select("#no_response")
@@ -89,7 +98,7 @@ dispatch.on("load_chart", function (chart_data) {
 
     y.domain([0, d3.max(new_chart_data, function (d) {
         return d3.max(new_depts, function (y) {
-            return d[y];
+            return parseFloat(d[y]);
         });
     })]).nice();
 
@@ -126,7 +135,7 @@ dispatch.on("load_chart", function (chart_data) {
 
     g.append("g").attr("class", "xaxis").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x0));
 
-    g.append("g").attr("class", "yaxis").call(d3.axisLeft(y).tickFormat(formatPercent).ticks(null, "s")).append("text").attr("x", 2).attr("y", function () {
+    g.append("g").attr("class", "yaxis").call(d3.axisLeft(y).tickFormat(formatDollar).ticks(null, "s")).append("text").attr("x", 2).attr("y", function () {
         return y(y.ticks().pop()) + 0.5;
     }).attr("dy", "0.32em").attr("fill", "#000").attr("font-weight", "bold").attr("text-anchor", "start");
 
@@ -150,11 +159,11 @@ dispatch.on("load_chart", function (chart_data) {
 
         y.domain([0, d3.max(update_data, function (d) {
             return d3.max(new_deptx, function (d2) {
-                return d[d2];
+                return parseFloat(d[d2]);
             });
         })]).nice();
 
-        d3.select(".yaxis").transition(750).call(d3.axisLeft(y).tickFormat(formatPercent).ticks(null, "s"));
+        d3.select(".yaxis").transition(750).call(d3.axisLeft(y).tickFormat(formatDollar).ticks(null, "s"));
 
         d3.select(".xaxis").transition(750).call(d3.axisBottom(x0).ticks(null, "s"));
 

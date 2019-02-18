@@ -16,28 +16,22 @@ function _toConsumableArray(arr) {
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
+dispatch.on("load_choice", function (load_data, sos_graph_data/*, question_info*/) {
 
     let drop_box = function drop_box(id_name, variable, start_val) {
-
         let select_list;
 
-        if (variable === "Question") {
-
-            let question_infox = _.where(question_info, { label_en: start_val[0] })[0].variable_cat_en;
-            let questions_for_cat = _.where(question_info, { variable_cat_en: question_infox });
-
-            select_list = _.uniq(_.pluck(questions_for_cat, "label_en")).sort();
-        } else if (variable === "Category") {
-            select_list = _.uniq(_.pluck(question_info, "variable_cat_en")).sort();
-        } else {
-
-            select_list = _.without(_.uniq(_.pluck(load_data, variable)), 'All organisations', 'Large (>= 2, 000)', 'Medium (500 to 1,999)', 'Small (100 to 499)', 'Very small (<100)' ).sort();
-        }
-
         if (variable === "DEPT") {
-            select_list.splice(0, 0, 'All organisations', 'Large (>= 2, 000)', 'Medium (500 to 1,999)', 'Small (100 to 499)', 'Very small (<100)');
+
+            select_list = dept_list;
+            //console.log("list of depts: " + select_list);
+
+        } else if (variable === "year") {
+
+            select_list = years_list;
+            //console.log("list of years: " + select_list);
         }
+
 
         let sel_var = d3.select(id_name).selectAll("option").data(select_list);
 
@@ -73,42 +67,42 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
             let current_depts = selectedDeptArray;
 
 
-            if (this.id === "sel_cat") {
 
-                let current_cat = d3.select("#sel_cat").property("value");
+            // if (this.id === "sel_cat") {
 
-                let current_label = _.filter(question_info, function (row) {
-                    return _.contains([current_cat], row.variable_cat_en);
-                })[0]["label_en"];
+            //     let current_cat = d3.select("#sel_cat").property("value");
 
-                let current_q_num = _.filter(question_info, function (row) {
-                    return _.contains([current_cat], row.variable_cat_en);
-                })[0]["var_name_e"];
+            //     let current_label = _.filter(question_info, function (row) {
+            //         return _.contains([current_cat], row.variable_cat_en);
+            //     })[0]["label_en"];
 
-                current_question = _.uniq(_.pluck(_.filter(load_data, function (row) {
-                    return _.contains([current_q_num], row.Question);
-                }), "Question"))[0];
+            //     let current_q_num = _.filter(question_info, function (row) {
+            //         return _.contains([current_cat], row.variable_cat_en);
+            //     })[0]["var_name_e"];
 
-                drop_box("#sel_question", "Question", [current_label]);
-            } else {
+            //     current_question = _.uniq(_.pluck(_.filter(load_data, function (row) {
+            //         return _.contains([current_q_num], row.Question);
+            //     }), "Question"))[0];
 
-                let current_label = d3.select("#sel_question").property("value");
+            //     drop_box("#sel_question", "Question", [current_label]);
+            // } else {
 
-                let current_q_num = _.filter(question_info, function (row) {
-                    return _.contains([current_label], row.label_en);
-                })[0]["var_name_e"];
+            //     let current_label = d3.select("#sel_question").property("value");
 
-                current_question = _.uniq(_.pluck(_.filter(load_data, function (row) {
-                    return _.contains([current_q_num], row.Question);
-                }), "Question"))[0];
-            }
+            //     let current_q_num = _.filter(question_info, function (row) {
+            //         return _.contains([current_label], row.label_en);
+            //     })[0]["var_name_e"];
 
-            let current_fol = d3.select("#sel_fol").property("value");
-            let current_reg = d3.select("#sel_reg").property("value");
+            //     current_question = _.uniq(_.pluck(_.filter(load_data, function (row) {
+            //         return _.contains([current_q_num], row.Question);
+            //     }), "Question"))[0];
+            // }
 
+            let current_year = d3.select("#sel_year").property("value");
 
+ 
             let new_TBL_data = _.filter(load_data, function (row) {
-                return _.contains(current_depts, row.DEPT) && _.contains([current_question], row.Question) && _.contains([current_fol], row.FOL) && _.contains([current_reg], row.Region);
+                return _.contains(current_depts, row.DEPT) && _.contains([current_year], row.Year);
             });
 
 
@@ -165,46 +159,47 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
 
 
 
-            let new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_fol][current_reg][current_question], function (answer) {
-                return _.contains(current_depts, answer.final_dept_e);
-            }), 'question_value');
+            let new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_year], function (answer) {
+                return _.contains(current_depts, answer.department);
+            }), 'type');
 
+            // console.log("new_graph_data_1: " + JSON.stringify(new_graph_data_1));
 
             let new_graph_data = _.map(new_graph_data_1, function (value) {
 
                 let mapped = _.map(value, function (dept) {
-                    return _defineProperty({}, dept.final_dept_e, dept.shr_w_resp);
+                    return _defineProperty({}, dept.department, dept.contracts_value);
                 });
 
                 let tempx1 =  _.extend.apply(null, mapped);
-                return _.extend(tempx1 , {
-                    Answer: value[0].question_value,
-                    Sorter: value[0].sorter
-                })
+                // let newObj = _.extend(tempx1 , {
+                //     Answer: value[0].question_value
+                // });
 
-                // return newObj;
+                // var newObj = Object.assign.apply(Object, [{}].concat(_toConsumableArray(mapped), [{
+                //     Answer: value[0].question_value
+                // }]));
+
+                return _.extend(tempx1 , {
+                    Answer: value[0].type,
+                    //Sorter: value[0].sorter
+                });
             });
 
-            let current_q_long = _.filter(question_info, function (row) {
-                return _.contains([current_question], row.var_name_e);
-            })[0]["full_variable_question"];
+            //console.log("new_graph_data: " + new_graph_data);
 
-            d3.select("#quest_div").text(current_q_long);
 
             dispatch.call("update_table", this, new_TBL_data);
             dispatch.call("update_chart", this, new_graph_data);
         });
     };
 
-    let start_q_long = _.filter(question_info, function (row) {
-        return _.contains(start_label, row.label_en);
-    })[0]["full_variable_question"];
-
-    d3.select("#quest_div").text(start_q_long);
-    drop_box("#sel_cat", "Category", start_cat);
+    // let start_q_long = _.filter(question_info, function (row) {
+    //     return _.contains(start_label, row.label_en);
+    // })[0]["full_variable_question"];
+    //drop_box("#sel_cat", "Category", start_cat);
     drop_box("#sel_dept", "DEPT", start_dept);
-    drop_box("#sel_question", "Question", start_label);
-    drop_box("#sel_fol", "FOL", start_fol);
-    drop_box("#sel_reg", "Region", start_reg);
+    //drop_box("#sel_question", "Question", start_label);
+    drop_box("#sel_year", "year", start_year);
 
 });

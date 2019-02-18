@@ -13,15 +13,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 let dispatch = d3.dispatch("load_choice", "load_table", "update_table", "load_chart", "update_chart");
 
-let start_dept = ["All organisations"];
-let start_reg = ["All regions"];
-let start_fol = ["All official languages"];
-let start_Q = ["ADV_05_e"];
-let start_label = ["How long been a staffing advisor in federal public service (ADV_05)"];
-let start_cat = ["Staffing advisors"];
+let start_dept = ["All Departments"];
+let start_year = ["2016"];
+let dept_list = [];
+let years_list = []; 
 
-let fmt_pct = d3.format(".1%");
-let formatPercent = d3.format(".0%");
+let fmt_pct = function(d) { return "$" + d3.format(".2s")(d).replace(/G/,"B"); }
+let formatDollar = function(d) { return "$" + d3.format(".2s")(d).replace(/G/,"B"); }
+
+
+
 
     // if (typeof window.AudioContext !== "undefined") {
     //
@@ -39,7 +40,7 @@ let formatPercent = d3.format(".0%");
 
 let z = d3.scaleOrdinal(d3.schemeCategory20);
 
-function test_func(error, var_info, sos_tbl_data) {
+function test_func(error, sos_data) {
 
     // if (typeof window.AudioContext !== "undefined") {
     //
@@ -59,63 +60,83 @@ function test_func(error, var_info, sos_tbl_data) {
         console.log("Error on data load");
     }
 
-    let sos_graph_data = _.chain(sos_tbl_data).groupBy('FOL_e').mapObject(function (fol) {
-        return _.groupBy(fol, 'Region_e');
-    }).mapObject(function (fol) {
-        return _.mapObject(fol, function (reg) {
-            return _.groupBy(reg, 'question_name');
-        });
-    }).value();
+    //console.log("sos_data: " + JSON.stringify(sos_data));
 
-    let groups = _.groupBy(sos_tbl_data, function (value) {
-        return value.FOL_e + '#' + value.Region_e + '#' + value.question_name + '#' + value.final_dept_e;
+    var types = _.uniq(_.pluck(sos_data, 'type'));
+    var years = _.uniq(_.pluck(sos_data, 'year'));
+
+    
+    // Adding 'All departments' rows
+    for (var year in years) {
+
+        for (var index in types) {
+            //console.log("availableType: " + types[index]);
+            var combinations = _.filter(sos_data, function (row) {
+                return types[index] == row.type && years[year] == row.year;
+            });
+            var number_contracts = _.reduce(_.pluck(combinations, 'number_contracts'), function(memo, num){ return memo + parseInt(num); }, 0);
+            var contracts_value = _.reduce(_.pluck(combinations, 'contracts_value'), function(memo, num){ return memo + parseInt(num); }, 0);
+            var newCombination = {
+                "department":"All Departments",
+                "year": years[year],
+                "type": types[index],
+                "number_contracts": number_contracts,
+                "contracts_value": contracts_value
+            };
+            sos_data.push(newCombination);
+        }
+    }
+
+    let sos_graph_data = _.chain(sos_data).groupBy('year').value();
+
+
+    //console.log("sos_graph_data: " + JSON.stringify(sos_graph_data));
+
+    dept_list = _.uniq(_.pluck(sos_data, 'department')).sort();
+
+    // move 'All departments to the beginning of the list'
+    dept_list.splice( dept_list.indexOf("All Departments"), 1 );
+    dept_list.unshift("All Departments");
+
+    years_list = _.uniq(_.pluck(sos_data, 'year')).sort();
+
+
+    let groups = _.groupBy(sos_data, function (value) {
+        return value.year + '#' + value.department;
     });
 
     let new_table_data = _.map(groups, function (group) {
 
         let mapped = _.map(group, function (ans) {
-            return _defineProperty({}, ans.question_value, ans.shr_w_resp);
+            return _defineProperty({}, ans.type, ans.contracts_value);
         });
 
-        let ans_keys = _.uniq(_.map(group, function (key) {
-            return key.question_value;
+
+        let type_keys = _.uniq(_.map(group, function (key) {
+            return key.type;
         }));
 
-        let sorted_keys1 = _.uniq(_.map(group, function (key) {
-            return {
-                answer: key.question_value,
-                sorter:key.sorter
-            }
-        }));
-
-        let sorted_keys = _.map(sorted_keys1, function (ans) {
-            return _defineProperty({}, ans.answer, ans.sorter);
-        });
 
         let newObj2 =  _.extend.apply(null, mapped);
 
         return _.extend(newObj2, {
-            Region: group[0].Region_e,
-            DEPT: group[0].final_dept_e,
-            FOL: group[0].FOL_e,
-            Question: group[0].question_name,
-            answer_keys : ans_keys,
-            sorted_keys : sorted_keys
+            DEPT: group[0].department,
+            Year: group[0].year,
+            type_keys : type_keys,
         });
 
 
        // return newObj3;
     });
 
-    dispatch.call("load_choice", undefined, new_table_data, sos_graph_data, var_info);
+    dispatch.call("load_choice", undefined, new_table_data, sos_graph_data/*, var_info*/);
     dispatch.call("load_table", undefined, new_table_data);
     dispatch.call("load_chart", undefined, sos_graph_data);
 
 }
 function init() {
     d3.queue()
-        .defer(d3.csv, 'csv/VARIABLES_FOR_D3.csv')
-        .defer(d3.csv, 'csv/SNPS_FINAL_EN.csv')
+        .defer(d3.csv, 'csv/contracts-summary.csv')
         .await(test_func); //only function name is needed
 }
 

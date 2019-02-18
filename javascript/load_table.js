@@ -14,20 +14,15 @@ dispatch.on("load_table", function (tbl_data) {
 
 
     let filt_SOS_data = _.filter(tbl_data, function (row) {
-        return _.contains(start_dept, row.DEPT) && _.contains(start_Q, row.Question) && _.contains(start_fol, row.FOL) && _.contains(start_reg, row.Region);
+        return _.contains(start_dept, row.DEPT) && _.contains(start_year, row.Year);
     });
 
-    let temp_answer_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'answer_keys')));
+    // console.log("filt_SOS_data: " + JSON.stringify(filt_SOS_data));
 
-    let new_answer_keys = _.sortBy(temp_answer_keys, function(element){
-
-        let rank = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'sorted_keys')));
-        return rank[element];
-
-    });
+    let new_type_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'type_keys')));
 
 
-    let columns = ["Series","DEPT"].concat(_toConsumableArray(new_answer_keys));
+    let columns = ["Series","DEPT"].concat(_toConsumableArray(new_type_keys));
 
     let table = d3.select("#table_div")
                     .append('table')
@@ -87,14 +82,9 @@ dispatch.on("load_table", function (tbl_data) {
 
         $('#adv_tbl').DataTable().destroy(); 
 
-        let temp_answer_keys = _.uniq(_.flatten(_.pluck(d, 'answer_keys')));
+        let answer_keys = _.uniq(_.flatten(_.pluck(d, 'type_keys')));
 
-        let answer_keys_2 = _.sortBy(temp_answer_keys, function(element){
-            let rank = _.uniq(_.flatten(_.pluck(d, 'sorted_keys')));
-            return rank[element];
-        });
-
-        let new_columns = ["Series","DEPT"].concat(_toConsumableArray(answer_keys_2));
+        let new_columns = ["Series","DEPT"].concat(_toConsumableArray(answer_keys));
 
         let table_u = d3.select('table');
 
