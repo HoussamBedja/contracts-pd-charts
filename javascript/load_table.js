@@ -63,8 +63,14 @@ dispatch.on("load_table", function (tbl_data) {
     rows_grp_enter.merge(rows_grp);
 
     rows_grp_enter.selectAll('td').data(function (row) {
+        let total = 0;
+        for (var i in row.type_keys) {
+            total += parseInt(row[row.type_keys[i]]);
+        }
+
         return columns.map(function (column) {
-            return { column: column, value: row[column], dept: row.DEPT };
+            let average = "(" + Math.round((parseInt(row[column])/total)*100) + "%)";
+            return { column: column, value: row[column], dept: row.DEPT, average: average };
         });
     }).enter().append('td')
         .attr("scope",function (d,i) {
@@ -74,7 +80,7 @@ dispatch.on("load_table", function (tbl_data) {
         if (d.column === "Series") {
             return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '"/> </svg>';
         } else {
-            return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value);
+            return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value) + ' ' + d.average;
         }
     });
 
@@ -109,8 +115,17 @@ dispatch.on("load_table", function (tbl_data) {
         let rows_grp_enter_u = rows_grp_u.enter().append('tr');
 
         let new_tds = rows_grp_u.merge(rows_grp_enter_u).selectAll('td').data(function (row) {
+            console.log("row:" + JSON.stringify(row));
+            let total = 0;
+            for (var i in row.type_keys) {
+                total += parseInt(row[row.type_keys[i]]);
+            }
+            console.log("total = " + total);
+            
             return new_columns.map(function (column) {
-                return { column: column, value: row[column], dept: row.DEPT };
+                let average = "(" + Math.round((parseInt(row[column])/total)*100) + "%)";
+                console.log("returned:" + JSON.stringify({ column: column, value: row[column], dept: row.DEPT, average: average }));
+                return { column: column, value: row[column], dept: row.DEPT, average: average };
             });
         });
         new_tds.exit().remove();
@@ -123,7 +138,7 @@ dispatch.on("load_table", function (tbl_data) {
                 if (d.column === "Series") {
                        return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
                 } else {
-                    return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value);
+                    return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value) + ' ' + d.average;
                 }
             });
 
@@ -135,7 +150,7 @@ dispatch.on("load_table", function (tbl_data) {
                 if (d.column === "Series") {
                     return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
                 } else {
-                    return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value);
+                    return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value) + ' ' + d.average;
                 }
             });
        
