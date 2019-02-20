@@ -37,7 +37,7 @@ dispatch.on("load_table", function (tbl_data) {
     } );
 
 
-    table.append("caption").text("Staffing and Non-Partisanship Survey - Results");
+    table.append("caption").text("Proactive Disclosure - Contracts Over $10k");
 
     let thead = table.append('thead');
     let tbody = table.append('tbody');
@@ -124,6 +124,7 @@ dispatch.on("load_table", function (tbl_data) {
             
             return new_columns.map(function (column) {
                 let average = "(" + Math.round((parseInt(row[column])/total)*100) + "%)";
+                console.log("average: " + average);
                 console.log("returned:" + JSON.stringify({ column: column, value: row[column], dept: row.DEPT, average: average }));
                 return { column: column, value: row[column], dept: row.DEPT, average: average };
             });

@@ -136,7 +136,7 @@ function test_func(error, sos_data) {
 }
 function init() {
     d3.queue()
-        .defer(d3.csv, 'csv/contracts-summary.csv')
+        .defer(d3.csv, 'contracts-summary.csv')
         .await(test_func); //only function name is needed
 }
 

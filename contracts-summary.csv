@@ -1,0 +1,769 @@
+department,year,type,number_contracts,contracts_value
+Canadian Space Agency | Agence spatiale canadienne,2017,Goods,94,342770397.19
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2014,Other,37,2285418.62
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2014,Other,60,2035521.18
+Fisheries and Oceans Canada | Pêches et Océans Canada,2011,Other,6642,1669099701.42
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2013,Other,116,6662154.83
+National Film Board | Office national du film,2018,Goods,38,2572994.04
+Canadian Space Agency | Agence spatiale canadienne,2017,Services,383,2637028065.75
+Correctional Service of Canada | Service correctionnel du Canada,2008,Other,10,17647603.00
+National Defence | Défense nationale,2016,Other,13575,5982165695.06
+National Research Council Canada | Conseil national de recherches Canada,2006,Other,30,166229779.00
+National Defence | Défense nationale,2004,Other,5271,7052428259.14
+Natural Resources Canada | Ressources naturelles Canada,2009,Other,7,892906.27
+National Film Board | Office national du film,2017,Services,130,6001608.37
+Canadian Space Agency | Agence spatiale canadienne,2017,Construction,41,19342339.55
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2015,Other,13,549148.30
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2013,Other,43,1044859.36
+Canadian Space Agency | Agence spatiale canadienne,2018,Services,147,26526184.03
+Fisheries and Oceans Canada | Pêches et Océans Canada,2010,Other,5589,776999500.37
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2012,Other,94,6855790.00
+National Film Board | Office national du film,2017,Goods,48,2254794.54
+Correctional Service of Canada | Service correctionnel du Canada,2009,Other,60,71843310.00
+National Film Board | Office national du film,2016,Goods,1,25697.79
+Department of Justice | Ministère de la Justice,2011,Services,1,195000.00
+National Defence | Défense nationale,2005,Other,10130,5491903222.98
+National Research Council Canada | Conseil national de recherches Canada,2005,Other,15,15294286.00
+Canadian Space Agency | Agence spatiale canadienne,2018,Construction,13,1555557.21
+Natural Resources Canada | Ressources naturelles Canada,2008,Other,4,7722129.61
+Canadian Space Agency | Agence spatiale canadienne,2018,Goods,42,2428559.95
+National Film Board | Office national du film,2016,Services,3,38074.66
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2012,Other,27,1137608.20
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2011,Other,142,7788477.34
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2012,Other,71,6771199.00
+Canada Revenue Agency | Agence du revenu du Canada,2010,Other,2389,1063887434.94
+Health Canada | Santé Canada,2008,Services,2,266183122.23
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2009,Services,2,65720871.40
+National Defence | Défense nationale,2006,Other,4454,1041268607.21
+National Research Council Canada | Conseil national de recherches Canada,2004,Other,9,27837338.00
+National Research Council Canada | Conseil national de recherches Canada,2016,Other,1042,75840126.92
+Natural Resources Canada | Ressources naturelles Canada,2007,Other,1,38512.50
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2013,Other,89,3750870.72
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2010,Other,617,92052695.51
+Courts Administration Service | Service administratif des tribunaux judiciaires,2018,Other,3,96467.00
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2011,Other,95,3423411.18
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2010,Other,172,6248672.88
+Canada Revenue Agency | Agence du revenu du Canada,2012,Other,2358,728546307.40
+Canada Revenue Agency | Agence du revenu du Canada,2011,Other,3186,1831746705.11
+National Film Board | Office national du film,2018,Services,110,4696767.48
+National Research Council Canada | Conseil national de recherches Canada,2015,Other,2710,411501994.01
+National Defence | Défense nationale,2007,Other,6685,4098062107.08
+National Research Council Canada | Conseil national de recherches Canada,2003,Other,1,595349.00
+Canadian Space Agency | Agence spatiale canadienne,2013,Construction,1,129859.61
+Canadian Centre for Occupational Health and Safety | Centre canadien d'hygiène et de sécurité au travail,2017,Goods,6,130495.33
+Canadian Grain Commission | Commission canadienne des grains,2017,Services,65,2778015.45
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2006,Other,28,785864.85
+Natural Resources Canada | Ressources naturelles Canada,2016,Other,1779,130615588.70
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2006,Other,33,879935.94
+Canadian Space Agency | Agence spatiale canadienne,2013,Goods,3,2467896216.72
+Office of the Commissioner for Federal Judicial Affairs Canada | Commissariat à la magistrature fédérale Canada,2017,Services,91,4454808.75
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2011,Other,631,453404978.10
+Canada Border Services Agency | Agence des services frontaliers du Canada,2018,Other,1,11880.54
+Global Affairs Canada | Affaires mondiales Canada,2018,Services,1886,182681440.44
+Health Canada | Santé Canada,2018,Goods,288,27344115.17
+Office of the Commissioner for Federal Judicial Affairs Canada | Commissariat à la magistrature fédérale Canada,2017,Goods,7,152493.14
+Health Canada | Santé Canada,2018,Construction,30,1358223.12
+Canadian Centre for Occupational Health and Safety | Centre canadien d'hygiène et de sécurité au travail,2017,Services,18,614778.33
+Fisheries and Oceans Canada | Pêches et Océans Canada,2015,Other,6026,1574761259.66
+Canada Border Services Agency | Agence des services frontaliers du Canada,2011,Services,20,18577618.62
+Canadian Grain Commission | Commission canadienne des grains,2018,Goods,44,3418555.54
+Global Affairs Canada | Affaires mondiales Canada,2010,Other,3131,266888718.71
+National Defence | Défense nationale,2012,Other,18794,6994753827.96
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2005,Other,123,4889163.00
+National Defence | Défense nationale,2000,Other,2,60657.00
+Correctional Service of Canada | Service correctionnel du Canada,2016,Other,982,64908002.00
+Global Affairs Canada | Affaires mondiales Canada,2018,Goods,855,55567605.54
+Global Affairs Canada | Affaires mondiales Canada,2018,Construction,287,15025693.55
+Canadian Grain Commission | Commission canadienne des grains,2018,Services,34,1092719.64
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2013,Services,3,307524.33
+Health Canada | Santé Canada,2018,Services,868,57287290.38
+Department of Justice | Ministère de la Justice,2014,Services,2,383911.44
+Canadian Centre for Occupational Health and Safety | Centre canadien d'hygiène et de sécurité au travail,2018,Goods,1,21941.77
+Department of Justice | Ministère de la Justice,2016,Goods,24,1328782.10
+Canadian Grain Commission | Commission canadienne des grains,2016,Services,2,176854.58
+Canadian Space Agency | Agence spatiale canadienne,2014,Goods,2,8438745.21
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2007,Other,45,1269344.19
+Office of the Commissioner for Federal Judicial Affairs Canada | Commissariat à la magistrature fédérale Canada,2016,Services,2,68403.41
+Natural Resources Canada | Ressources naturelles Canada,2015,Other,2059,145896638.16
+Office of the Commissioner for Federal Judicial Affairs Canada | Commissariat à la magistrature fédérale Canada,2016,Goods,1,11328.22
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2005,Other,32,972936.72
+Canadian Centre for Occupational Health and Safety | Centre canadien d'hygiène et de sécurité au travail,2018,Services,15,576758.96
+Canadian Space Agency | Agence spatiale canadienne,2014,Services,9,123067248.93
+Fisheries and Oceans Canada | Pêches et Océans Canada,2014,Other,5733,1847015338.37
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2012,Other,545,257675011.62
+Correctional Service of Canada | Service correctionnel du Canada,2010,Services,4,3686851.16
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2016,Other,68,2699308.29
+Canadian Space Agency | Agence spatiale canadienne,2013,Services,10,1102938875.61
+National Defence | Défense nationale,2013,Other,15112,6509963316.66
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2004,Other,89,5985572.00
+Canada Border Services Agency | Agence des services frontaliers du Canada,2012,Services,32,52583110.01
+Canadian Grain Commission | Commission canadienne des grains,2017,Construction,1,15029.70
+National Research Council Canada | Conseil national de recherches Canada,2009,Other,1859,122285082.00
+Canadian Grain Commission | Commission canadienne des grains,2017,Goods,73,3752008.24
+Office of the Commissioner for Federal Judicial Affairs Canada | Commissariat à la magistrature fédérale Canada,2017,Construction,1,24012.50
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2012,Services,3,605984.23
+Canadian Space Agency | Agence spatiale canadienne,2014,Construction,6,3426567.52
+Canada Border Services Agency | Agence des services frontaliers du Canada,2012,Goods,9,115220674.93
+Department of Justice | Ministère de la Justice,2015,Services,6,3289199.04
+Canadian Space Agency | Agence spatiale canadienne,2015,Goods,4,3232512.52
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2016,Other,39,1829493.34
+Natural Resources Canada | Ressources naturelles Canada,2014,Other,1993,128136124.29
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2004,Other,48,1028735.14
+Fisheries and Oceans Canada | Pêches et Océans Canada,2001,Other,1,108530.00
+Health Canada | Santé Canada,2016,Goods,17,4308173.83
+Fisheries and Oceans Canada | Pêches et Océans Canada,2013,Other,6157,735007626.79
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2004,Other,25,631978.91
+Global Affairs Canada | Affaires mondiales Canada,2008,Services,1,25526318.05
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2016,Other,19,1298961.35
+Health Canada | Santé Canada,2016,Construction,5,349670.85
+Canada School of Public Service | École de la fonction publique du Canada,2018,Services,46,1763769.43
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2013,Other,614,132180295.35
+Correctional Service of Canada | Service correctionnel du Canada,2011,Services,20,141720581.33
+Canadian Space Agency | Agence spatiale canadienne,2015,Services,39,813754595.95
+National Defence | Défense nationale,2002,Other,2,6327563.92
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2015,Other,51,2560924.01
+National Research Council Canada | Conseil national de recherches Canada,2008,Other,110,77837359.00
+Canadian Grain Commission | Commission canadienne des grains,2016,Goods,1,71139.91
+Global Affairs Canada | Affaires mondiales Canada,2012,Other,3045,358581527.68
+National Defence | Défense nationale,2014,Other,15509,9268146991.54
+Health Canada | Santé Canada,2016,Services,205,63911914.17
+Fisheries and Oceans Canada | Pêches et Océans Canada,2009,Services,20,1622721.95
+Canadian Space Agency | Agence spatiale canadienne,2015,Construction,3,1487086.66
+Canadian Space Agency | Agence spatiale canadienne,2016,Goods,3,291353.47
+Correctional Service of Canada | Service correctionnel du Canada,2012,Goods,1,99234.33
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2009,Services,61,1754725.08
+Natural Resources Canada | Ressources naturelles Canada,2013,Other,2068,283018972.01
+Canadian Space Agency | Agence spatiale canadienne,2004,Goods,1,163836206.96
+Office of the Commissioner for Federal Judicial Affairs Canada | Commissariat à la magistrature fédérale Canada,2018,Services,39,3026531.72
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2005,Other,54,1243887.18
+Fisheries and Oceans Canada | Pêches et Océans Canada,2012,Other,6570,524576371.03
+Office of the Commissioner for Federal Judicial Affairs Canada | Commissariat à la magistrature fédérale Canada,2018,Goods,8,382070.29
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2015,Other,59,2674323.99
+Health Canada | Santé Canada,2017,Goods,425,32037253.14
+Canadian Space Agency | Agence spatiale canadienne,2016,Services,40,472180102.89
+Canada School of Public Service | École de la fonction publique du Canada,2017,Services,64,11068432.18
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2014,Other,599,90440265.00
+Correctional Service of Canada | Service correctionnel du Canada,2012,Services,50,52265074.82
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2009,Goods,1,13931.00
+Health Canada | Santé Canada,2017,Construction,36,2188419.54
+Canada Border Services Agency | Agence des services frontaliers du Canada,2010,Services,4,6218729.90
+Department of Justice | Ministère de la Justice,2013,Services,1,473748.34
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2014,Other,59,3384207.08
+Correctional Service of Canada | Service correctionnel du Canada,2007,Other,2,4079606.00
+National Defence | Défense nationale,2003,Other,2,173250.00
+Global Affairs Canada | Affaires mondiales Canada,2011,Other,3318,365890112.89
+National Defence | Défense nationale,2015,Other,17041,6571048668.42
+National Research Council Canada | Conseil national de recherches Canada,2007,Other,48,30076717.00
+Canada School of Public Service | École de la fonction publique du Canada,2018,Goods,22,1186666.62
+Canadian Space Agency | Agence spatiale canadienne,2016,Construction,6,17074881.66
+Correctional Service of Canada | Service correctionnel du Canada,2013,Construction,1,55125.00
+Canada Border Services Agency | Agence des services frontaliers du Canada,2010,Goods,1,114706.00
+Health Canada | Santé Canada,2017,Services,1327,152142240.93
+Canada Border Services Agency | Agence des services frontaliers du Canada,2015,Goods,56,231413193.63
+Correctional Service of Canada | Service correctionnel du Canada,2013,Goods,4,5939966.56
+Natural Resources Canada | Ressources naturelles Canada,2012,Other,2172,222511455.93
+Employment and Social Development Canada | Emploi et Développement social Canada,2006,Other,2000,1796341529.21
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2018,Services,27,6170128.43
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2013,Services,26,1416460.16
+Canada School of Public Service | École de la fonction publique du Canada,2016,Goods,7,656686.82
+Canadian Northern Economic Development Agency | Agence canadienne de développement économique du Nord,2018,Goods,2,114190.92
+Canada Revenue Agency | Agence du revenu du Canada,2017,Other,341,8886898.09
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2016,Goods,11,8340412.20
+Canada Revenue Agency | Agence du revenu du Canada,2005,Other,2858,417138626.18
+Canada School of Public Service | École de la fonction publique du Canada,2016,Services,21,2864251.37
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2015,Other,758,298594802.81
+Correctional Service of Canada | Service correctionnel du Canada,2013,Services,114,54420629.85
+Indigenous Services Canada | Services aux Autochtones Canada,2014,Services,7,1370219.35
+Employment and Social Development Canada | Emploi et Développement social Canada,2006,Services,1,722543485.66
+Employment and Social Development Canada | Emploi et Développement social Canada,2018,Services,751,94735290.45
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2018,Goods,1,11936.79
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2013,Goods,22,788019.17
+Canada Border Services Agency | Agence des services frontaliers du Canada,2015,Services,267,184543555.37
+Canada School of Public Service | École de la fonction publique du Canada,2017,Goods,37,1626552.02
+Department of Justice | Ministère de la Justice,2018,Services,225,15462309.77
+Correctional Service of Canada | Service correctionnel du Canada,2014,Construction,1,1204370.90
+Employment and Social Development Canada | Emploi et Développement social Canada,2018,Goods,101,23304091.03
+Library and Archives Canada | Bibliothèque et Archives Canada,2012,Services,2,36006.80
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2015,Services,24,7769960.87
+Canadian Northern Economic Development Agency | Agence canadienne de développement économique du Nord,2017,Services,7,186389.85
+Correctional Service of Canada | Service correctionnel du Canada,2014,Goods,11,4092305.16
+Employment and Social Development Canada | Emploi et Développement social Canada,2018,Construction,2,43603.38
+Employment and Social Development Canada | Emploi et Développement social Canada,2005,Other,1987,322772691.83
+Employment and Social Development Canada | Emploi et Développement social Canada,2017,Other,1,20853.09
+Canada Border Services Agency | Agence des services frontaliers du Canada,2016,Goods,237,27810194.80
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2016,Other,719,107524883.43
+Natural Resources Canada | Ressources naturelles Canada,2011,Other,1421,327152588.02
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2012,Services,43,2035413.73
+Canadian Space Agency | Agence spatiale canadienne,2010,Goods,2,975153.32
+Canada Border Services Agency | Agence des services frontaliers du Canada,2016,Construction,8,1451805.78
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2009,Other,68,2575413.64
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2015,Goods,17,34267616.64
+Canada Revenue Agency | Agence du revenu du Canada,2006,Other,2805,661170380.33
+Canada School of Public Service | École de la fonction publique du Canada,2015,Services,2,415840.00
+Correctional Service of Canada | Service correctionnel du Canada,2014,Services,240,120917567.89
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2012,Services,2,3298197.02
+Indigenous Services Canada | Services aux Autochtones Canada,2015,Services,6,6713478.01
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2012,Goods,36,1568809.46
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2014,Goods,1,1069360.00
+Canada Border Services Agency | Agence des services frontaliers du Canada,2016,Services,644,232948771.72
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2014,Services,16,16110814.48
+Correctional Service of Canada | Service correctionnel du Canada,2015,Construction,5,843321.51
+Library and Archives Canada | Bibliothèque et Archives Canada,2011,Services,4,116586.94
+Indigenous Services Canada | Services aux Autochtones Canada,2016,Goods,1,296592.00
+Canadian Northern Economic Development Agency | Agence canadienne de développement économique du Nord,2018,Services,9,405890.53
+Correctional Service of Canada | Service correctionnel du Canada,2015,Goods,52,46096767.95
+Employment and Social Development Canada | Emploi et Développement social Canada,2016,Other,969,123152792.62
+Department of Justice | Ministère de la Justice,2017,Goods,81,7100575.44
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2011,Services,61,1944275.27
+Natural Resources Canada | Ressources naturelles Canada,2010,Other,23,23499600.23
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2008,Other,90,2926287.43
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2005,Other,5,37568234.53
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2008,Other,43,1281767.14
+Canada Revenue Agency | Agence du revenu du Canada,2007,Other,3215,1108230813.55
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2016,Goods,3,138802.91
+Correctional Service of Canada | Service correctionnel du Canada,2015,Services,379,125526089.71
+Library and Archives Canada | Bibliothèque et Archives Canada,2015,Goods,1,189278.04
+Employment and Social Development Canada | Emploi et Développement social Canada,2004,Services,2,1671252520.70
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2013,Services,1,156612.47
+Employment and Social Development Canada | Emploi et Développement social Canada,2016,Services,404,115011674.29
+Indigenous Services Canada | Services aux Autochtones Canada,2016,Services,18,8218951.82
+Canada Border Services Agency | Agence des services frontaliers du Canada,2013,Services,73,168150047.52
+National Defence | Défense nationale,2010,Other,16787,6604719100.23
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2013,Goods,2,754822.80
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2013,Services,10,3663858.58
+Correctional Service of Canada | Service correctionnel du Canada,2016,Construction,148,14631569.29
+Employment and Social Development Canada | Emploi et Développement social Canada,2016,Goods,1,270262.35
+Library and Archives Canada | Bibliothèque et Archives Canada,2014,Services,4,213844.09
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2014,Goods,4,619521.32
+Indigenous Services Canada | Services aux Autochtones Canada,2017,Goods,14,537567.83
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2015,Services,47,3516539.02
+Department of Justice | Ministère de la Justice,2016,Services,82,13360403.00
+Correctional Service of Canada | Service correctionnel du Canada,2016,Goods,1322,85635905.45
+Canada Border Services Agency | Agence des services frontaliers du Canada,2013,Goods,8,30392816.00
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2011,Goods,31,855507.78
+Indigenous Services Canada | Services aux Autochtones Canada,2017,Construction,2,24396.70
+Employment and Social Development Canada | Emploi et Développement social Canada,2004,Other,1246,1405330039.40
+Canada Border Services Agency | Agence des services frontaliers du Canada,2014,Goods,32,49090042.95
+Indigenous Services Canada | Services aux Autochtones Canada,2018,Construction,4,82085.01
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2009,Other,81,2849729.35
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2006,Other,2,1721329.10
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2017,Services,35,14257173.12
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2010,Services,39,977832.88
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2007,Other,52,1820703.88
+Canada Revenue Agency | Agence du revenu du Canada,2008,Other,2756,1123737591.93
+Correctional Service of Canada | Service correctionnel du Canada,2016,Services,1884,1084617633.90
+International Joint Commission | Commission mixte internationale,2018,Services,21,464927.01
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2014,Services,40,30360329.80
+Employment and Social Development Canada | Emploi et Développement social Canada,2017,Services,1225,202413485.69
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2017,Goods,17,673999.66
+Indigenous Services Canada | Services aux Autochtones Canada,2017,Services,40,3493015.25
+Department of Justice | Ministère de la Justice,2018,Goods,60,3544731.71
+Indigenous Services Canada | Services aux Autochtones Canada,2018,Services,260,17359846.48
+National Defence | Défense nationale,2011,Other,22359,11987301683.68
+Canada Border Services Agency | Agence des services frontaliers du Canada,2014,Services,133,125355744.70
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2012,Goods,2,37243151.84
+Correctional Service of Canada | Service correctionnel du Canada,2017,Construction,213,36732252.89
+Employment and Social Development Canada | Emploi et Développement social Canada,2017,Goods,116,47159567.36
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2015,Goods,2,189690.04
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2012,Services,9,177425110.71
+International Joint Commission | Commission mixte internationale,2018,Construction,1,445446.00
+Correctional Service of Canada | Service correctionnel du Canada,2017,Goods,2255,172560654.71
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2016,Services,29,4108829.14
+Indigenous Services Canada | Services aux Autochtones Canada,2018,Goods,48,4684951.66
+Department of Justice | Ministère de la Justice,2017,Services,362,41239933.27
+Employment and Social Development Canada | Emploi et Développement social Canada,2017,Construction,6,84270.02
+Employment and Social Development Canada | Emploi et Développement social Canada,2003,Other,4,27171294.94
+Employment and Social Development Canada | Emploi et Développement social Canada,2015,Other,1104,253874337.24
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2010,Goods,26,1383241.91
+International Joint Commission | Commission mixte internationale,2018,Goods,10,299939.96
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2016,Construction,14,7943131.79
+International Joint Commission | Commission mixte internationale,2017,Goods,1,90862.17
+Military Grievances External Review Committee | Comité externe d’examen des griefs militaires,2016,Services,17,430140.98
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2007,Other,60,309420113.88
+Correctional Service of Canada | Service correctionnel du Canada,2017,Services,1563,137802274.33
+Library and Archives Canada | Bibliothèque et Archives Canada,2017,Goods,54,3063318.85
+Employment and Social Development Canada | Emploi et Développement social Canada,2014,Services,6,11444882.04
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2014,Goods,9,249373.47
+International Joint Commission | Commission mixte internationale,2017,Services,18,643433.81
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2008,Goods,3,22327897.66
+Canada Revenue Agency | Agence du revenu du Canada,2013,Other,1436,218367543.33
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2015,Services,77,65021896.21
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2016,Services,239,76617131.62
+Military Grievances External Review Committee | Comité externe d’examen des griefs militaires,2016,Goods,6,132941.85
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2018,Services,16,812337.18
+Correctional Service of Canada | Service correctionnel du Canada,2018,Construction,164,12368375.00
+Employment and Social Development Canada | Emploi et Développement social Canada,2014,Goods,1,880848.63
+Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,2015,Goods,1,206109.92
+Correctional Service of Canada | Service correctionnel du Canada,2018,Goods,1868,93470982.29
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2016,Goods,21,1624918.56
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2018,Services,52,3284591.58
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2013,Services,43,1949236.23
+Library and Archives Canada | Bibliothèque et Archives Canada,2016,Services,35,4655128.86
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2008,Other,79,65806822.51
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2017,Construction,118,10025051.78
+Employment and Social Development Canada | Emploi et Développement social Canada,2009,Other,1830,503558755.04
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2018,Construction,1,24901.70
+Correctional Service of Canada | Service correctionnel du Canada,2018,Services,1086,89693782.32
+Military Grievances External Review Committee | Comité externe d’examen des griefs militaires,2015,Services,27,188730.89
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2015,Goods,11,237458.54
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2018,Goods,7,610555.41
+Library and Archives Canada | Bibliothèque et Archives Canada,2016,Goods,3,206983.67
+Canadian Grain Commission | Commission canadienne des grains,2016,Other,1,18965.75
+Employment and Social Development Canada | Emploi et Développement social Canada,2015,Services,113,125201611.56
+Canada Revenue Agency | Agence du revenu du Canada,2014,Other,1244,197903565.58
+Canada Revenue Agency | Agence du revenu du Canada,2002,Other,13,44617928.25
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2017,Services,1050,107459006.60
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2017,Services,28,1668678.23
+Employment and Social Development Canada | Emploi et Développement social Canada,2015,Goods,1,7723544.11
+Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,2016,Goods,9,252542.11
+Military Grievances External Review Committee | Comité externe d’examen des griefs militaires,2015,Goods,1,1470.60
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2017,Goods,930,36548938.61
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2018,Services,474,135129627.37
+Library and Archives Canada | Bibliothèque et Archives Canada,2015,Services,15,2719417.91
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2014,Services,34,2241248.54
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2018,Construction,71,5286509.54
+Canada Border Services Agency | Agence des services frontaliers du Canada,2017,Goods,189,30893933.69
+Military Grievances External Review Committee | Comité externe d’examen des griefs militaires,2018,Services,4,250371.10
+Employment and Social Development Canada | Emploi et Développement social Canada,2008,Other,1992,462589292.31
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2012,Goods,14,392953.09
+Canada Border Services Agency | Agence des services frontaliers du Canada,2017,Construction,5,335195.39
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2009,Other,88,149205330.22
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2018,Goods,93,22306838.28
+Employment and Social Development Canada | Emploi et Développement social Canada,2012,Services,6,115726138.75
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2012,Construction,3,95483.98
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2017,Goods,10,200849.89
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2016,Goods,5,155656.76
+Canada Revenue Agency | Agence du revenu du Canada,2015,Other,1138,173161785.25
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2018,Construction,1,33112.80
+Canada Revenue Agency | Agence du revenu du Canada,2003,Other,18,139533282.71
+Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,2016,Services,23,4342012.91
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2017,Construction,1,11115.29
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2018,Services,657,39423395.92
+Canada Border Services Agency | Agence des services frontaliers du Canada,2017,Services,463,261797325.93
+Military Grievances External Review Committee | Comité externe d’examen des griefs militaires,2018,Goods,7,123242.02
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2011,Services,105,4812970.65
+Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,2017,Goods,43,1411729.44
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2017,Services,495,96976100.09
+Library and Archives Canada | Bibliothèque et Archives Canada,2018,Services,77,5839085.87
+Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,2018,Goods,645,37647357.97
+Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,2014,Services,4,855462.76
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2016,Services,34,1130545.00
+Military Grievances External Review Committee | Comité externe d’examen des griefs militaires,2017,Services,6,251717.88
+Employment and Social Development Canada | Emploi et Développement social Canada,2007,Other,1819,343037623.34
+Canada Border Services Agency | Agence des services frontaliers du Canada,2018,Goods,191,36978184.17
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2017,Goods,123,15826064.01
+Canada Border Services Agency | Agence des services frontaliers du Canada,2018,Construction,2,51296.69
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2018,Goods,6,498425.88
+Library and Archives Canada | Bibliothèque et Archives Canada,2018,Goods,42,5314151.00
+Employment and Social Development Canada | Emploi et Développement social Canada,2013,Services,4,108078510.84
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2013,Goods,12,371580.60
+Indigenous Services Canada | Services aux Autochtones Canada,2013,Services,1,2197596.04
+Canadian Northern Economic Development Agency | Agence canadienne de développement économique du Nord,2017,Goods,1,21182.84
+Canada Revenue Agency | Agence du revenu du Canada,2016,Other,876,98716529.62
+Canada Revenue Agency | Agence du revenu du Canada,2004,Other,1665,207496622.78
+Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,2016,Goods,1,10250.00
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2013,Construction,2,40622.77
+Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,2017,Services,53,5202249.10
+Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,2018,Services,73,10333589.37
+Military Grievances External Review Committee | Comité externe d’examen des griefs militaires,2017,Goods,4,297772.89
+Canada Border Services Agency | Agence des services frontaliers du Canada,2018,Services,314,108516042.59
+Correctional Service of Canada | Service correctionnel du Canada,2009,Goods,2,55319735.90
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2012,Services,76,2523842.02
+Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,2018,Goods,25,2866834.95
+Library and Archives Canada | Bibliothèque et Archives Canada,2017,Services,115,20332279.10
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2017,Services,71,6623144.25
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2016,Services,212,61276519.96
+Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,2017,Construction,1,13805.54
+National Defence | Défense nationale,2016,Services,1003,367552228.86
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2018,Services,46,1976070.08
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2015,Services,6,482603.77
+National Defence | Défense nationale,2004,Services,1,192780.00
+Department of Finance Canada | Ministère des Finances Canada,2018,Goods,23,1428874.19
+Fisheries and Oceans Canada | Pêches et Océans Canada,2011,Services,10,3292487.07
+Correctional Service of Canada | Service correctionnel du Canada,2009,Services,2,1879945.81
+Courts Administration Service | Service administratif des tribunaux judiciaires,2016,Goods,10,1970715.64
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2010,Goods,17,358796.08
+Canadian Transportation Agency | Office des transports du Canada,2016,Services,59,6841033.91
+Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,2017,Goods,19,733839.79
+National Defence | Défense nationale,2016,Goods,1048,113468782.29
+Military Police Complaints Commission of Canada | Commission d'examen des plaintes concernant la police militaire du Canada,2018,Services,14,323142.45
+Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,2016,Services,9,991861.06
+National Defence | Défense nationale,2016,Construction,116,11864572.14
+Courts Administration Service | Service administratif des tribunaux judiciaires,2016,Services,28,7034455.32
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2013,Services,5,3886987.06
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2016,Goods,42,1836947.41
+Canadian Transportation Agency | Office des transports du Canada,2017,Services,47,4622038.33
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2010,Other,4607,285489868.44
+Department of Finance Canada | Ministère des Finances Canada,2017,Services,134,15982738.21
+Canada Revenue Agency | Agence du revenu du Canada,2010,Goods,2,2118375.00
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2014,Services,4,2077963.06
+Canadian Transportation Agency | Office des transports du Canada,2017,Goods,11,493977.73
+Employment and Social Development Canada | Emploi et Développement social Canada,2010,Other,2002,298429076.12
+Farm Products Council of Canada | Conseil des produits agricoles du Canada,2014,Services,1,5650.00
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2009,Services,40,1118274.37
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2014,Services,7,4834672.00
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2017,Services,99,15355014.92
+Department of Finance Canada | Ministère des Finances Canada,2017,Goods,24,4502341.95
+National Defence | Défense nationale,2015,Services,183,69532362.18
+Courts Administration Service | Service administratif des tribunaux judiciaires,2017,Goods,34,1582932.93
+Canada Revenue Agency | Agence du revenu du Canada,2010,Services,13,0.00
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2011,Goods,11,218742.19
+Fisheries and Oceans Canada | Pêches et Océans Canada,2012,Services,45,6864215.90
+Canadian Transportation Agency | Office des transports du Canada,2015,Services,6,401674.90
+National Research Council Canada | Conseil national de recherches Canada,2018,Services,23,2308006.75
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2009,Goods,10,416044.59
+Fisheries and Oceans Canada | Pêches et Océans Canada,2013,Construction,2,83679.36
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2011,Services,2,244028.51
+National Defence | Défense nationale,2003,Goods,1,123910.00
+Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,2018,Goods,16,682933.91
+National Defence | Défense nationale,2015,Goods,42,1337462287.10
+Courts Administration Service | Service administratif des tribunaux judiciaires,2017,Services,71,7201694.16
+Department of Finance Canada | Ministère des Finances Canada,2016,Services,144,11648503.91
+Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,2017,Services,56,2852697.91
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2018,Construction,1,19047.09
+National Defence | Défense nationale,2015,Construction,36,898665.53
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2012,Services,1,641966.00
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2014,Goods,1,109881.69
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2008,Goods,29,2370387.30
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2018,Goods,30,1792087.29
+Canada Revenue Agency | Agence du revenu du Canada,2011,Goods,3,435000.00
+"Innovation, Science and Economic Development Canada | Innovation, Sciences et Développement économique Canada",2017,Goods,315,31572817.55
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2015,Services,1,85466.41
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2008,Services,63,2073562.07
+Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,2010,Services,163,6786794.82
+"Innovation, Science and Economic Development Canada | Innovation, Sciences et Développement économique Canada",2017,Construction,13,248616.15
+Canadian Transportation Agency | Office des transports du Canada,2016,Goods,7,216347.79
+Global Affairs Canada | Affaires mondiales Canada,2009,Other,2396,241891627.99
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2013,Services,1,1008822.92
+Canadian Space Agency | Agence spatiale canadienne,1999,Services,2,887072626.20
+National Defence | Défense nationale,2014,Services,55,5346206087.80
+Courts Administration Service | Service administratif des tribunaux judiciaires,2018,Construction,6,502209.10
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2013,Services,1,137860.00
+Canada Revenue Agency | Agence du revenu du Canada,2011,Services,14,9742985.29
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2016,Services,36,11972873.33
+Courts Administration Service | Service administratif des tribunaux judiciaires,2018,Goods,61,3824310.68
+Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,2012,Services,1,1453887.84
+Canadian Transportation Agency | Office des transports du Canada,2014,Services,2,118974.72
+"Innovation, Science and Economic Development Canada | Innovation, Sciences et Développement économique Canada",2017,Services,1117,363871056.43
+National Research Council Canada | Conseil national de recherches Canada,2017,Services,496,61879052.49
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2017,Goods,17,1046576.01
+National Defence | Défense nationale,2014,Goods,16,53238098.14
+Department of Finance Canada | Ministère des Finances Canada,2016,Goods,16,1238739.53
+Military Police Complaints Commission of Canada | Commission d'examen des plaintes concernant la police militaire du Canada,2016,Services,20,558172.94
+Courts Administration Service | Service administratif des tribunaux judiciaires,2018,Services,86,8666090.33
+Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,2018,Services,39,1067954.61
+Natural Resources Canada | Ressources naturelles Canada,2018,Services,1068,77826371.67
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2017,Goods,25,1931187.31
+Canada Revenue Agency | Agence du revenu du Canada,2012,Goods,5,628757.21
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2015,Services,21,4246218.76
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2007,Goods,41,1241817.37
+"Innovation, Science and Economic Development Canada | Innovation, Sciences et Développement économique Canada",2018,Goods,247,49783863.26
+National Research Council Canada | Conseil national de recherches Canada,2018,Construction,3,160808.04
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2016,Services,6,459026.33
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2015,Goods,2,1137247.51
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2007,Services,71,1646008.42
+"Innovation, Science and Economic Development Canada | Innovation, Sciences et Développement économique Canada",2018,Construction,4,60123.79
+National Research Council Canada | Conseil national de recherches Canada,2018,Goods,12,344247.84
+National Defence | Défense nationale,2001,Services,1,2670061.62
+National Defence | Défense nationale,2013,Services,29,85912647.73
+Canada Revenue Agency | Agence du revenu du Canada,2012,Services,25,40534992.81
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2015,Services,1,749100.40
+Fisheries and Oceans Canada | Pêches et Océans Canada,2010,Services,10,508022.23
+National Research Council Canada | Conseil national de recherches Canada,2016,Services,9,3864671.77
+"Innovation, Science and Economic Development Canada | Innovation, Sciences et Développement économique Canada",2018,Services,909,147766726.38
+Military Police Complaints Commission of Canada | Commission d'examen des plaintes concernant la police militaire du Canada,2017,Services,22,1119595.26
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2016,Goods,2,38304.29
+National Defence | Défense nationale,2013,Goods,7,34182740.45
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2006,Goods,29,963793.61
+Canada Revenue Agency | Agence du revenu du Canada,2013,Goods,9,10160173.50
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2014,Services,9,2704556.43
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2018,Goods,13,939379.04
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2006,Services,55,1384096.67
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2016,Goods,11,674124.06
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2015,Services,2,38813.00
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2018,Services,24,1490224.88
+National Research Council Canada | Conseil national de recherches Canada,2017,Construction,76,100182762.15
+National Defence | Défense nationale,2012,Services,9,203168018.43
+National Research Council Canada | Conseil national de recherches Canada,2017,Goods,305,12388170.19
+Canada Revenue Agency | Agence du revenu du Canada,2013,Services,89,59399798.36
+Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,2014,Services,3,3515977.05
+Canada Revenue Agency | Agence du revenu du Canada,2009,Other,2589,537061593.97
+Infrastructure Canada | Infrastructure Canada,2017,Goods,28,9622440.75
+National Defence | Défense nationale,2012,Goods,11,49734388.48
+Canada Revenue Agency | Agence du revenu du Canada,2014,Goods,5,15023654.31
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2017,Goods,13,534435.26
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2005,Goods,8,545263.36
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2017,Services,24,887503.95
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2005,Services,41,1025445.94
+"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",2011,Services,1,243231338.00
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2014,Other,4077,282697473.02
+Employment and Social Development Canada | Emploi et Développement social Canada,2002,Other,7,110547935.69
+Employment and Social Development Canada | Emploi et Développement social Canada,2014,Other,1294,218341123.40
+National Defence | Défense nationale,2011,Services,5,20661077.30
+Farm Products Council of Canada | Conseil des produits agricoles du Canada,2018,Services,3,53520.00
+Canada Revenue Agency | Agence du revenu du Canada,2014,Services,129,68412228.92
+Infrastructure Canada | Infrastructure Canada,2018,Goods,21,979260.86
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2004,Services,14,343010.78
+National Defence | Défense nationale,2011,Goods,5,11612493.06
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2018,Services,74,7229476.87
+Infrastructure Canada | Infrastructure Canada,2018,Services,75,4745362906.51
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2004,Goods,6,393874.94
+Canada Revenue Agency | Agence du revenu du Canada,2015,Goods,22,7031522.83
+Infrastructure Canada | Infrastructure Canada,2017,Services,95,10085881.55
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2016,Goods,5,238878.45
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2016,Services,11,426474.98
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2013,Other,4468,285006935.12
+Employment and Social Development Canada | Emploi et Développement social Canada,2001,Other,2,119769395.00
+Employment and Social Development Canada | Emploi et Développement social Canada,2013,Other,1303,379601426.56
+Farm Products Council of Canada | Conseil des produits agricoles du Canada,2017,Services,3,82844.38
+Canada Revenue Agency | Agence du revenu du Canada,2015,Services,311,179026059.62
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2015,Services,4,70862.32
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2017,Services,104,10131620.75
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2018,Goods,31,1952269.04
+Canada Revenue Agency | Agence du revenu du Canada,2016,Goods,107,26189243.37
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2015,Goods,17,1258731.40
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2012,Other,4094,272299810.10
+Library and Archives Canada | Bibliothèque et Archives Canada,2010,Services,1,21953.38
+Farm Products Council of Canada | Conseil des produits agricoles du Canada,2016,Services,1,60000.00
+Employment and Social Development Canada | Emploi et Développement social Canada,2000,Other,2,35177027.61
+Employment and Social Development Canada | Emploi et Développement social Canada,2012,Other,1296,235193767.84
+Canada Revenue Agency | Agence du revenu du Canada,2016,Services,342,123192818.81
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2016,Services,171,9685620.42
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2014,Services,5,160227.45
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2017,Goods,64,2823104.02
+Canada Revenue Agency | Agence du revenu du Canada,2017,Goods,309,74466008.25
+Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,2014,Goods,9,747135.50
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2011,Other,3869,259347823.68
+Employment and Social Development Canada | Emploi et Développement social Canada,2011,Other,1771,240969804.49
+Canada Revenue Agency | Agence du revenu du Canada,2017,Services,645,100881056.20
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2017,Services,1060,145188867.84
+Civilian Review and Complaints Commission for the RCMP | Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,2017,Services,45,2162025.10
+Fisheries and Oceans Canada | Pêches et Océans Canada,2007,Other,132,47607598.96
+Global Affairs Canada | Affaires mondiales Canada,2014,Services,77,80456641.37
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2014,Goods,1,68994.89
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2018,Services,1213,71454172.93
+Health Canada | Santé Canada,2014,Construction,2,126306.41
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2014,Services,40,31273478.37
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2017,Goods,116,7110621.82
+National Energy Board | Office national de l'énergie,2018,Services,135,22900210.05
+Natural Resources Canada | Ressources naturelles Canada,2013,Goods,2,3011599.99
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2018,Construction,2,28371.50
+Canada Revenue Agency | Agence du revenu du Canada,2018,Goods,127,29752694.71
+Elections Canada | Élections Canada,2017,Goods,49,4339508.87
+National Energy Board | Office national de l'énergie,2018,Goods,31,2594861.27
+Global Affairs Canada | Affaires mondiales Canada,2014,Goods,5,1577520.11
+Global Affairs Canada | Affaires mondiales Canada,2014,Other,3279,408298757.79
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2009,Other,162,4440316.17
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2018,Goods,454,36057638.47
+Civilian Review and Complaints Commission for the RCMP | Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,2018,Goods,6,346420.13
+Global Affairs Canada | Affaires mondiales Canada,2014,Construction,4,649837.28
+Health Canada | Santé Canada,2014,Goods,2,7374000.00
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2015,Goods,3,210588.95
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2018,Construction,101,5248513.67
+Correctional Service of Canada | Service correctionnel du Canada,2012,Other,311,191911865.00
+Health Canada | Santé Canada,2014,Services,38,13489549.41
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2015,Construction,3,890048.30
+Canada Revenue Agency | Agence du revenu du Canada,2018,Services,357,44085730.28
+Elections Canada | Élections Canada,2017,Services,308,279967933.33
+Fisheries and Oceans Canada | Pêches et Océans Canada,2007,Services,1,17687098.19
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2006,Other,2632,107081751.84
+National Research Council Canada | Conseil national de recherches Canada,2010,Other,2545,175027795.00
+Civilian Review and Complaints Commission for the RCMP | Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,2016,Services,26,602145.08
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2016,Services,23,6498535.44
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2004,Services,1,284630.29
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2013,Goods,1,1209063.37
+Global Affairs Canada | Affaires mondiales Canada,2015,Services,142,117725270.49
+Health Canada | Santé Canada,2015,Goods,5,2423360.14
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2013,Services,8,27885912.39
+National Energy Board | Office national de l'énergie,2017,Services,195,36114904.78
+Fisheries and Oceans Canada | Pêches et Océans Canada,2006,Other,23,2772955.54
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2016,Goods,2,744673.03
+National Energy Board | Office national de l'énergie,2017,Goods,43,3362191.18
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2017,Construction,9,2493409.68
+Natural Resources Canada | Ressources naturelles Canada,2013,Services,3,3297866.12
+Elections Canada | Élections Canada,2018,Goods,41,5814770.87
+Global Affairs Canada | Affaires mondiales Canada,2015,Goods,12,3992767.72
+Civilian Review and Complaints Commission for the RCMP | Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,2017,Goods,7,124468.22
+Global Affairs Canada | Affaires mondiales Canada,2013,Other,3074,349414711.80
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2008,Other,147,3850980.56
+Global Affairs Canada | Affaires mondiales Canada,2015,Construction,9,11177682.23
+National Energy Board | Office national de l'énergie,2016,Goods,1,42630.00
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2005,Other,2891,112806096.12
+Correctional Service of Canada | Service correctionnel du Canada,2013,Other,630,331679013.00
+Fisheries and Oceans Canada | Pêches et Océans Canada,2008,Services,15,746276.39
+Health Canada | Santé Canada,2015,Services,48,18990411.14
+Elections Canada | Élections Canada,2018,Services,243,46793947.00
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2015,Services,14,2333309.45
+National Energy Board | Office national de l'énergie,2016,Services,186,21132247.08
+Global Affairs Canada | Affaires mondiales Canada,2016,Services,244,90448403.90
+Canadian Human Rights Commission | Commission canadienne des droits de la personne,2018,Goods,11,1019920.56
+Health Canada | Santé Canada,2012,Construction,1,72104.77
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2012,Services,11,10277835.63
+Fisheries and Oceans Canada | Pêches et Océans Canada,2018,Goods,1873,1685575491.34
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2016,Services,23,6825847.66
+Fisheries and Oceans Canada | Pêches et Océans Canada,2005,Other,6,3364166.62
+Canada Revenue Agency | Agence du revenu du Canada,2008,Goods,2,11801022.98
+Fisheries and Oceans Canada | Pêches et Océans Canada,2018,Construction,787,50557743.08
+Global Affairs Canada | Affaires mondiales Canada,2016,Goods,18,2574549.27
+Canadian Human Rights Commission | Commission canadienne des droits de la personne,2018,Services,32,838446.67
+National Energy Board | Office national de l'énergie,2016,Construction,2,32391.56
+Global Affairs Canada | Affaires mondiales Canada,2016,Construction,21,6605426.69
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2007,Other,123,4538205.62
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2016,Goods,2,224120.79
+National Energy Board | Office national de l'énergie,2016,Goods,36,4131659.13
+Correctional Service of Canada | Service correctionnel du Canada,2014,Other,3176,408599603.00
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2016,Other,2509,195466170.84
+Health Canada | Santé Canada,2012,Services,5,2044343.34
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2004,Other,2003,63137446.06
+Global Affairs Canada | Affaires mondiales Canada,2016,Other,2694,229098694.18
+Canada Revenue Agency | Agence du revenu du Canada,2008,Services,1,20650261.32
+Global Affairs Canada | Affaires mondiales Canada,2004,Other,1235,74137671.29
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2016,Construction,1,401789.22
+Fisheries and Oceans Canada | Pêches et Océans Canada,2017,Services,3195,494764946.45
+Civilian Review and Complaints Commission for the RCMP | Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,2018,Services,26,1162870.57
+Global Affairs Canada | Affaires mondiales Canada,2017,Services,2200,229524553.60
+National Defence | Défense nationale,2009,Services,5,1220514519.42
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2017,Services,1812,140776536.05
+Fisheries and Oceans Canada | Pêches et Océans Canada,2007,Goods,1,28586.70
+Canada Revenue Agency | Agence du revenu du Canada,2009,Goods,1,10015384.97
+Fisheries and Oceans Canada | Pêches et Océans Canada,2004,Other,9,448709.16
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2006,Other,156,3851050.64
+Global Affairs Canada | Affaires mondiales Canada,2017,Goods,971,72875354.35
+National Defence | Défense nationale,2009,Goods,4,36125668.21
+Canadian Human Rights Commission | Commission canadienne des droits de la personne,2017,Services,3,115596.17
+Global Affairs Canada | Affaires mondiales Canada,2017,Construction,319,35319987.75
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2017,Goods,655,53618581.03
+Canadian Intergovernmental Conference Secretariat | Secrétariat des conférences intergouvernementales canadiennes,2018,Services,11,192483.35
+Correctional Service of Canada | Service correctionnel du Canada,2015,Other,3753,303457164.00
+Health Canada | Santé Canada,2013,Goods,3,834706.56
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2015,Other,2850,188727329.87
+Canada Revenue Agency | Agence du revenu du Canada,2009,Services,1,214695.89
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2017,Construction,166,13922866.91
+Canadian Intergovernmental Conference Secretariat | Secrétariat des conférences intergouvernementales canadiennes,2018,Goods,4,71042.48
+Global Affairs Canada | Affaires mondiales Canada,2015,Other,3254,297783496.18
+Health Canada | Santé Canada,2013,Services,25,13232587.37
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2014,Services,9,6433871.75
+Fisheries and Oceans Canada | Pêches et Océans Canada,2006,Services,1,17408.34
+Fisheries and Oceans Canada | Pêches et Océans Canada,2018,Services,2145,306184465.57
+Natural Resources Canada | Ressources naturelles Canada,2017,Goods,586,30747349.01
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2018,Services,18,660988.77
+Global Affairs Canada | Affaires mondiales Canada,2010,Services,2,23175719.50
+Canadian Intergovernmental Conference Secretariat | Secrétariat des conférences intergouvernementales canadiennes,2017,Other,19,395268.05
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2017,Goods,54,3117321.50
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2014,Services,4,3694237.12
+Natural Resources Canada | Ressources naturelles Canada,2017,Construction,48,4582577.14
+Canadian Institutes of Health Research | Instituts de recherche en santé du Canada,2011,Services,1,1482159.51
+National Defence | Défense nationale,2008,Services,1,494985231.20
+Canadian Space Agency | Agence spatiale canadienne,2009,Services,1,772982.84
+Fisheries and Oceans Canada | Pêches et Océans Canada,2016,Construction,1412,470418364.15
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2010,Other,46,1690297.58
+Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,2010,Other,79,4049962.00
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2018,Goods,20,663118.98
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2018,Services,205,23983451.46
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2017,Services,167,15747027.34
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2014,Goods,2,1154087.16
+Natural Resources Canada | Ressources naturelles Canada,2016,Services,52,73235575.71
+National Defence | Défense nationale,2008,Goods,5,4564650905.10
+Fisheries and Oceans Canada | Pêches et Océans Canada,2015,Goods,187,129774183.44
+Canadian Human Rights Commission | Commission canadienne des droits de la personne,2016,Services,14,400226.50
+Canadian Intergovernmental Conference Secretariat | Secrétariat des conférences intergouvernementales canadiennes,2017,Services,1,12401.75
+Fisheries and Oceans Canada | Pêches et Océans Canada,2015,Services,653,3221797457.24
+Canadian Human Rights Commission | Commission canadienne des droits de la personne,2016,Goods,8,209365.89
+Global Affairs Canada | Affaires mondiales Canada,2006,Other,3344,226878555.56
+Canadian Intergovernmental Conference Secretariat | Secrétariat des conférences intergouvernementales canadiennes,2017,Goods,1,11625.20
+National Defence | Défense nationale,2008,Other,10432,6632602719.56
+National Research Council Canada | Conseil national de recherches Canada,2014,Other,2236,150754837.00
+Natural Resources Canada | Ressources naturelles Canada,2018,Goods,464,17062239.67
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2017,Services,39,1560621.86
+Global Affairs Canada | Affaires mondiales Canada,2011,Services,2,1045733.50
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2016,Goods,13,1450765.75
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2015,Services,23,14402302.65
+Natural Resources Canada | Ressources naturelles Canada,2018,Construction,37,1443541.73
+Health Canada | Santé Canada,2010,Services,2,1242999.58
+Fisheries and Oceans Canada | Pêches et Océans Canada,2017,Goods,2629,408946410.18
+Military Police Complaints Commission of Canada | Commission d'examen des plaintes concernant la police militaire du Canada,2015,Services,1,27120.00
+Canadian Environmental Assessment Agency | Agence canadienne d'évaluation environnementale,2011,Other,46,1806899.05
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2017,Services,366,46148306.90
+Fisheries and Oceans Canada | Pêches et Océans Canada,2017,Construction,1384,273749272.41
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2017,Goods,21,1241258.19
+Global Affairs Canada | Affaires mondiales Canada,2011,Goods,4,2671266.02
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2016,Services,94,19365257.28
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2015,Goods,3,4453331.49
+Global Affairs Canada | Affaires mondiales Canada,2011,Construction,1,333419.64
+Courts Administration Service | Service administratif des tribunaux judiciaires,2013,Services,1,1382617.95
+Fisheries and Oceans Canada | Pêches et Océans Canada,2016,Goods,2758,473731907.00
+Natural Resources Canada | Ressources naturelles Canada,2017,Services,1803,213337929.19
+Canadian Human Rights Commission | Commission canadienne des droits de la personne,2015,Services,3,413515.03
+National Defence | Défense nationale,2009,Other,18402,8973280654.93
+Fisheries and Oceans Canada | Pêches et Océans Canada,2016,Services,3749,392646775.07
+Health Canada | Santé Canada,2011,Services,4,196213.54
+Global Affairs Canada | Affaires mondiales Canada,2005,Other,1841,163529013.87
+National Research Council Canada | Conseil national de recherches Canada,2013,Other,2357,178710638.00
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2018,Goods,125,8396855.23
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2009,Other,4311,189225971.18
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2018,Construction,11,633925.34
+Global Affairs Canada | Affaires mondiales Canada,2012,Services,30,31273654.51
+Fisheries and Oceans Canada | Pêches et Océans Canada,2009,Other,830,340250112.63
+National Defence | Défense nationale,2018,Services,4253,775193479.41
+National Defence | Défense nationale,2006,Services,2,216092451.50
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2012,Services,1,4345205.74
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2016,Goods,3,62118.27
+Canadian Human Rights Commission | Commission canadienne des droits de la personne,2013,Services,1,423428.96
+Fisheries and Oceans Canada | Pêches et Océans Canada,2014,Construction,13,110006967.04
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2016,Services,107,46009987.28
+Natural Resources Canada | Ressources naturelles Canada,2015,Goods,4,3851420.04
+National Defence | Défense nationale,2018,Goods,5979,668380902.96
+Natural Resources Canada | Ressources naturelles Canada,2014,Services,13,9121894.12
+National Defence | Défense nationale,2018,Construction,915,116697750.40
+Fisheries and Oceans Canada | Pêches et Océans Canada,2013,Goods,3,2901384.76
+Canadian Human Rights Commission | Commission canadienne des droits de la personne,2014,Services,1,337384.41
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2017,Goods,243,16042090.29
+Fisheries and Oceans Canada | Pêches et Océans Canada,2013,Services,104,136047040.64
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2016,Services,7,780585.89
+Correctional Service of Canada | Service correctionnel du Canada,2010,Other,118,153880010.00
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2008,Other,3603,130685091.12
+National Research Council Canada | Conseil national de recherches Canada,2012,Other,2271,529936189.00
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2017,Construction,16,19480132.75
+Global Affairs Canada | Affaires mondiales Canada,2008,Other,3061,342313624.64
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2018,Services,377,24342954.23
+Global Affairs Canada | Affaires mondiales Canada,2013,Services,42,55697246.17
+Fisheries and Oceans Canada | Pêches et Océans Canada,2008,Other,558,178583222.78
+National Defence | Défense nationale,2017,Services,6261,2281233161.40
+Courts Administration Service | Service administratif des tribunaux judiciaires,2015,Goods,1,47090.48
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2018,Goods,21,710178.00
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2013,Services,4,1624690.39
+Fisheries and Oceans Canada | Pêches et Océans Canada,2015,Construction,150,563674534.46
+Military Police Complaints Commission of Canada | Commission d'examen des plaintes concernant la police militaire du Canada,2013,Services,1,38137.50
+Indigenous and Northern Affairs Canada | Affaires autochtones et du Nord Canada,2018,Goods,110,7660459.49
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2015,Services,41,92210844.93
+Natural Resources Canada | Ressources naturelles Canada,2016,Goods,3,246744.77
+Global Affairs Canada | Affaires mondiales Canada,2013,Construction,2,243486.17
+National Defence | Défense nationale,2017,Goods,7195,1131007808.98
+Courts Administration Service | Service administratif des tribunaux judiciaires,2015,Services,2,345698.53
+Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,2018,Services,106,7946100.12
+Natural Resources Canada | Ressources naturelles Canada,2015,Services,17,7422568.41
+National Defence | Défense nationale,2017,Construction,1095,190475031.15
+Canadian Transportation Agency | Office des transports du Canada,2018,Services,50,3609492.97
+Fisheries and Oceans Canada | Pêches et Océans Canada,2014,Goods,22,1316215531.63
+Department of Finance Canada | Ministère des Finances Canada,2018,Services,90,13310274.08
+Global Affairs Canada | Affaires mondiales Canada,2007,Other,3372,181790245.96
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2016,Goods,11,2375799.25
+Correctional Service of Canada | Service correctionnel du Canada,2011,Other,188,232200774.00
+Canadian Transportation Agency | Office des transports du Canada,2018,Goods,17,909871.14
+Fisheries and Oceans Canada | Pêches et Océans Canada,2014,Services,162,67834358.71
+National Research Council Canada | Conseil national de recherches Canada,2011,Other,2583,172009331.00
+Canada Economic Development for Quebec Regions | Développement économique Canada pour les régions du Québec,2015,Services,3,221865.46
+Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,2016,Construction,19,45004630.81
+Environment and Climate Change Canada | Environnement et Changement climatique Canada,2007,Other,2981,124573456.79
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2017,Goods,40,6414790.42
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2013,Services,2,10557775.80
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2018,Goods,49,5072688.04
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2014,Services,8,21345211.85
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2015,Services,4,2508500.00
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2016,Services,27,39339869.36
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2015,Goods,2,1128373.57
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2016,Goods,5,3157811.29
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2017,Services,159,59381759.60
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2006,Services,2,107317946.28
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2018,Services,184,97474677.57
+Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,2009,Services,1,369271236.10
