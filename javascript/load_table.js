@@ -115,17 +115,13 @@ dispatch.on("load_table", function (tbl_data) {
         let rows_grp_enter_u = rows_grp_u.enter().append('tr');
 
         let new_tds = rows_grp_u.merge(rows_grp_enter_u).selectAll('td').data(function (row) {
-            console.log("row:" + JSON.stringify(row));
             let total = 0;
             for (var i in row.type_keys) {
                 total += parseInt(row[row.type_keys[i]]);
             }
-            console.log("total = " + total);
             
             return new_columns.map(function (column) {
                 let average = "(" + Math.round((parseInt(row[column])/total)*100) + "%)";
-                console.log("average: " + average);
-                console.log("returned:" + JSON.stringify({ column: column, value: row[column], dept: row.DEPT, average: average }));
                 return { column: column, value: row[column], dept: row.DEPT, average: average };
             });
         });

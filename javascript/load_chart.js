@@ -11,6 +11,21 @@ function _toConsumableArray(arr) {
     }
 }
 
+function getContractsURL(dept, type, year) {
+
+    type = type.replace("Services", "Service")
+               .replace("Goods", "Good");
+
+    let url = "https://open.canada.ca/en/search/contracts?contracts[0]=commodity_type_en:"+ type +"&contracts[1]=year:" + year;
+
+    if (!dept.includes("All Departments")) {
+        dept = dept.split(" | ")[0];
+        url += "&contracts[2]=org_name_en:" + dept;
+    }
+
+    return encodeURI(url);
+}
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 let svg = d3.select("svg"),
@@ -74,14 +89,14 @@ dispatch.on("load_chart", function (chart_data) {
         // var newObj = Object.assign.apply(Object, [{}].concat(_toConsumableArray(mapped), [{
         //     Answer: value[0].question_value
         // }]));
-
         return _.extend(tempx1 , {
             Answer: value[0].type,
+            Year: value[0].year
             //Sorter: value[0].sorter
         });
     });
 
-    //console.log("new_chart_data: " + JSON.stringify(new_chart_data));
+    console.log("new_chart_data: " + JSON.stringify(new_chart_data));
 
 
     if(new_chart_data.length == 0) {
@@ -102,17 +117,18 @@ dispatch.on("load_chart", function (chart_data) {
         });
     })]).nice();
 
+
     g.append("g").attr("id", "chart_g").selectAll("g").data(new_chart_data).enter().append("g").attr("transform", function (d) {
         return "translate(" + x0(d.Answer) + ",0)";
     }).attr("id", "rect_g").selectAll("rect").data(function (d, i) {
         return new_depts.map(function (y) {
-            return { key: y, value: d[y], tabindex: i + 1 };
+            return { key: y, value: d[y], tabindex: i + 1, type: d.Answer, year: d.Year };
         });
     }).enter()
         .append("rect")
         .attr("id", "bar1")
         .attr("x", function (d) {
-            return x1(d.key);
+            return x1(d);
         }).attr("y", function (d) {
             return _.isUndefined(d.value) ? y(0) : y(+d.value);
         }).attr("width", x1.bandwidth()).attr("height", function (d) {
@@ -121,6 +137,12 @@ dispatch.on("load_chart", function (chart_data) {
             return z(d.key);
         }).on("mousedown", function () {
             // mEvent = true;
+        }).on("click", function(d, i) {
+            console.log("d: " + JSON.stringify(d));
+            // getContractsURL(d.key, d.type, d.year);
+            if(d.type != "Other") {
+                window.open(getContractsURL(d.key, d.type, d.year));    
+            }
         }).on("focus", function (d) {
             // if (mEvent) {
             //     mEvent = false;
@@ -156,6 +178,7 @@ dispatch.on("load_chart", function (chart_data) {
         let new_deptx = selectedDeptArray;
 
         x0.domain(_.pluck(update_data, 'Answer'));
+        console.log("dd: " + JSON.stringify(update_data));
 
         y.domain([0, d3.max(update_data, function (d) {
             return d3.max(new_deptx, function (d2) {
@@ -184,8 +207,9 @@ dispatch.on("load_chart", function (chart_data) {
         }).selectAll("rect")
             .attr("id", "bar2")
             .data(function (d, i) {
+
             return _.map(new_deptx, function (state, j) {
-                return { key: state, value: d[state], tabindex: new_deptx.length * i + j + 1 };
+                return { key: state, value: d[state], tabindex: new_deptx.length * i + j + 1, type: d.Answer, year: d.Year };
             });
         });
 
@@ -242,6 +266,12 @@ dispatch.on("load_chart", function (chart_data) {
             return _.isUndefined(d.value) ? height - y(0) : height - y(d.value);
         }).attr("fill", function (d) {
             return z(d.key);
+        }).on("click", function(d, i) {
+            console.log("d: " + JSON.stringify(d));
+            //getContractsURL(d.key, d.type, d.year);
+            if(d.type != "Other") {
+                window.open(getContractsURL(d.key, d.type, d.year));    
+            }
         });
     });
 });

@@ -182,6 +182,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data/*, question_info*
 
                 return _.extend(tempx1 , {
                     Answer: value[0].type,
+                    Year: value[0].year
                     //Sorter: value[0].sorter
                 });
             });
