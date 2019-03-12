@@ -32,7 +32,8 @@ dispatch.on("load_table", function (tbl_data) {
     $(document).ready( function () {
         $('#adv_tbl').DataTable({
             "paging": false,
-            "searching": false
+            "searching": false,
+            "bInfo" : false
         });
     } );
 
@@ -153,7 +154,8 @@ dispatch.on("load_table", function (tbl_data) {
        
         $('#adv_tbl').DataTable({
                 "paging": false,
-                "searching": false
+                "searching": false,
+                "bInfo" : false
         });     
     });
 });

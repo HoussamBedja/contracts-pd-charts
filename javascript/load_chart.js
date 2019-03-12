@@ -16,15 +16,16 @@ function getContractsURL(dept, type, year) {
     type = type.replace("Services", "Service")
                .replace("Goods", "Good");
 
-    let url = "https://open.canada.ca/en/search/contracts?contracts[0]=commodity_type_en:"+ type +"&contracts[1]=year:" + year;
+    let url = "https://open.canada.ca/en/search/contracts?contracts[0]=commodity_type_en:"+ type +"&contracts[1]=year:" + year + "&contracts[2]=contract_value_en:B: $1,000,000.00 - $4,999,999.99&contracts[3]=contract_value_en:C: $100,000.00 - $999,999.99&contracts[4]=contract_value_en:D: $25,000.00 - $99,999.99&contracts[5]=contract_value_en:E: $10,000.00 - $24,999.99";
 
     if (!dept.includes("All Departments")) {
         dept = dept.split(" | ")[0];
-        url += "&contracts[2]=org_name_en:" + dept;
+        url += "&contracts[6]=org_name_en:" + dept;
     }
 
     return encodeURI(url);
 }
+
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -127,6 +128,7 @@ dispatch.on("load_chart", function (chart_data) {
     }).enter()
         .append("rect")
         .attr("id", "bar1")
+        .attr("style", "cursor: pointer;")
         .attr("x", function (d) {
             return x1(d);
         }).attr("y", function (d) {
@@ -227,7 +229,8 @@ dispatch.on("load_chart", function (chart_data) {
             //         oscillator.disconnect(context.destination);
             //     }, 100);
             // }
-        }).transition(750)
+        }).attr("style", "cursor: pointer;")
+          .transition(750)
             .attr("id", "bar3")
             .attr("x", function (d) {
             return x1(d.key);
@@ -255,6 +258,12 @@ dispatch.on("load_chart", function (chart_data) {
             //         oscillator.disconnect(context.destination);
             //     }, 100);
             // }
+        }).on("click", function(d, i) {
+            console.log("d: " + JSON.stringify(d));
+            //getContractsURL(d.key, d.type, d.year);
+            if(d.type != "Other") {
+                window.open(getContractsURL(d.key, d.type, d.year));    
+            }
         }).transition(750)
             .attr("x", function (d) {
             return x1(d.key);
@@ -266,12 +275,6 @@ dispatch.on("load_chart", function (chart_data) {
             return _.isUndefined(d.value) ? height - y(0) : height - y(d.value);
         }).attr("fill", function (d) {
             return z(d.key);
-        }).on("click", function(d, i) {
-            console.log("d: " + JSON.stringify(d));
-            //getContractsURL(d.key, d.type, d.year);
-            if(d.type != "Other") {
-                window.open(getContractsURL(d.key, d.type, d.year));    
-            }
         });
     });
 });
