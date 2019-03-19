@@ -151,12 +151,50 @@ dispatch.on("load_table", function (tbl_data) {
                     return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value) + ' ' + d.average;
                 }
             });
-       
+
+        
+
+
+
+        // since the number of columns is dynamic, we predefine the sorting configuration dynamically everytime it changes
+        let columnsSorting = [];
+        for (let i = $("thead tr").children().length-1; i > 1; i--) {
+            columnsSorting.push({ type: 'costum-sorting', targets: [ 0,i ], orderData: [ i ] });
+        }
+
         $('#adv_tbl').DataTable({
                 "paging": false,
                 "searching": false,
-                "bInfo" : false
-        });     
+                "bInfo" : false,
+                columnDefs: columnsSorting
+        }); 
+
+
+        // Writing a Datatables custom sorting for the Proactive disclosure values
+        jQuery.fn.dataTable.ext.type.order['costum-sorting-pre'] = function ( data ) {
+
+            if(data.length > 0) {
+                var multiplier = 1;
+ 
+                if ( data.includes('K') ) {
+                    multiplier = 1000;
+                }
+                else if ( data.includes('M') ) {
+                    multiplier = 1000000;
+                }
+                else if ( data.includes('B') ) {
+                    multiplier = 1000000000;
+                }
+
+                data = data.split(" (")[0].replace("$","").replace("k","").replace("M","").replace("B","");
+                return parseFloat( data ) * multiplier;
+
+            } else {
+                return -1;
+            }
+            
+        };
+
     });
 });
 

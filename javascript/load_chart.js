@@ -97,7 +97,6 @@ dispatch.on("load_chart", function (chart_data) {
         });
     });
 
-    console.log("new_chart_data: " + JSON.stringify(new_chart_data));
 
 
     if(new_chart_data.length == 0) {
@@ -180,7 +179,6 @@ dispatch.on("load_chart", function (chart_data) {
         let new_deptx = selectedDeptArray;
 
         x0.domain(_.pluck(update_data, 'Answer'));
-        console.log("dd: " + JSON.stringify(update_data));
 
         y.domain([0, d3.max(update_data, function (d) {
             return d3.max(new_deptx, function (d2) {
