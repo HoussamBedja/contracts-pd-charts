@@ -139,21 +139,16 @@ dispatch.on("load_chart", function (chart_data) {
         }).on("mousedown", function () {
             // mEvent = true;
         }).on("click", function(d, i) {
-            console.log("d: " + JSON.stringify(d));
-            // getContractsURL(d.key, d.type, d.year);
             if(d.type != "Other") {
                 window.open(getContractsURL(d.key, d.type, d.year));    
             }
-        }).on("focus", function (d) {
-            // if (mEvent) {
-            //     mEvent = false;
-            // } else {
-            //     oscillator.frequency.value = hz(d.value);
-            //     oscillator.connect(context.destination);
-            //     setTimeout(function () {
-            //         oscillator.disconnect(context.destination);
-            //     }, 100);
-            // }
+        }).on("mouseover", function() {
+            console.log("current color: " + $(this).css("fill"));
+            d3.select(this).attr("fill", LightenDarkenColor(rgb2hex($(this).css("fill")), -15));
+            d3.select(this).attr("stroke", LightenDarkenColor(rgb2hex($(this).css("fill")), 50)).attr("stroke-width","4px");
+        }).on("mouseout", function() {
+            d3.select(this).attr("fill", LightenDarkenColor(rgb2hex($(this).css("fill")), 15));
+            d3.select(this).attr("stroke", "");
         });
 
     g.append("g").attr("class", "xaxis").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x0));
@@ -262,6 +257,13 @@ dispatch.on("load_chart", function (chart_data) {
             if(d.type != "Other") {
                 window.open(getContractsURL(d.key, d.type, d.year));    
             }
+        }).on("mouseover", function() {
+            console.log("current color: " + $(this).css("fill"));
+            d3.select(this).attr("fill", LightenDarkenColor(rgb2hex($(this).css("fill")), -15));
+            d3.select(this).attr("stroke", LightenDarkenColor(rgb2hex($(this).css("fill")), 50)).attr("stroke-width","4px");
+        }).on("mouseout", function() {
+            d3.select(this).attr("fill", LightenDarkenColor(rgb2hex($(this).css("fill")), 15));
+            d3.select(this).attr("stroke", "");
         }).transition(750)
             .attr("x", function (d) {
             return x1(d.key);
@@ -276,3 +278,56 @@ dispatch.on("load_chart", function (chart_data) {
         });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function to darken a color (used when hovering over the chart bars)
+function LightenDarkenColor(col, amt) {
+  
+    var usePound = false;
+  
+    if (col[0] == "#") {
+        col = col.slice(1);
+        usePound = true;
+    }
+ 
+    var num = parseInt(col,16);
+ 
+    var r = (num >> 16) + amt;
+ 
+    if (r > 255) r = 255;
+    else if  (r < 0) r = 0;
+ 
+    var b = ((num >> 8) & 0x00FF) + amt;
+ 
+    if (b > 255) b = 255;
+    else if  (b < 0) b = 0;
+ 
+    var g = (num & 0x0000FF) + amt;
+ 
+    if (g > 255) g = 255;
+    else if (g < 0) g = 0;
+ 
+    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+  
+}
+
+// convert RGB color to HEX
+function rgb2hex(rgb){
+ rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+ return (rgb && rgb.length === 4) ? "#" +
+  ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
+}
