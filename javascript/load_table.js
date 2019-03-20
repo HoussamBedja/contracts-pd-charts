@@ -10,6 +10,20 @@ function _toConsumableArray(arr) {
 }
 
 
+function getContractsTableURL(dept, year) {
+
+    let url = "https://open.canada.ca/en/search/contracts?contracts[0]=year:" + year;
+
+    if (!dept.includes("All Departments")) {
+        dept = dept.split(" | ")[0];
+        url += "&contracts[1]=org_name_en:" + dept;
+    }
+
+    return encodeURI(url);
+}
+
+
+
 dispatch.on("load_table", function (tbl_data) {
 
 
@@ -78,12 +92,17 @@ dispatch.on("load_table", function (tbl_data) {
             return i === 0 ? "row" : undefined;
         })
         .html(function (d) {
-        if (d.column === "Series") {
-            return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '"/> </svg>';
-        } else {
-            return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value) + ' ' + d.average;
-        }
-    });
+            if (d.column === "Series") {
+                return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '" style="cursor: pointer;" /> </svg>';
+            } else {
+                return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value) + ' ' + d.average;
+            }
+        })
+        .on("click", function(d) {
+            if (d.column === "Series") {
+                window.open(getContractsTableURL(d.dept, $("#sel_year").val()));
+            }
+        });
 
     dispatch.on("update_table", function (d) {
 
@@ -134,21 +153,33 @@ dispatch.on("load_table", function (tbl_data) {
             })
             .html(function (d) {
                 if (d.column === "Series") {
-                       return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
+                       return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '" style="cursor: pointer;" /></svg>';
                 } else {
                     return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value) + ' ' + d.average;
                 }
+            })
+            .on("click", function(d) {
+                if (d.column === "Series") {
+                    window.open(getContractsTableURL(d.dept, $("#sel_year").val()));
+                }
             });
 
+
+        // append td if table doesn't exist (after selecting a department with no values for example)
         new_tds.enter().append('td')
             .attr("scope",function (d,i) {
                 return i === 0 ? "row" : undefined;
             })
             .html(function (d) {
                 if (d.column === "Series") {
-                    return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
+                    return '<svg width="20" height="20"><title>Series color</title><desc>'+ d.dept + '</desc><rect width="20" height="20"  fill="' + z(d.dept) + '" style="cursor: pointer;" /></svg>';
                 } else {
                     return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value) + ' ' + d.average;
+                }
+            })
+            .on("click", function(d) {
+                if (d.column === "Series") {
+                    window.open(getContractsTableURL(d.dept, $("#sel_year").val()));
                 }
             });
 

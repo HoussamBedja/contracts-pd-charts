@@ -16,11 +16,11 @@ function getContractsURL(dept, type, year) {
     type = type.replace("Services", "Service")
                .replace("Goods", "Good");
 
-    let url = "https://open.canada.ca/en/search/contracts?contracts[0]=commodity_type_en:"+ type +"&contracts[1]=year:" + year + "&contracts[2]=contract_value_en:B: $1,000,000.00 - $4,999,999.99&contracts[3]=contract_value_en:C: $100,000.00 - $999,999.99&contracts[4]=contract_value_en:D: $25,000.00 - $99,999.99&contracts[5]=contract_value_en:E: $10,000.00 - $24,999.99";
+    let url = "https://open.canada.ca/en/search/contracts?contracts[0]=commodity_type_en:"+ type +"&contracts[1]=year:" + year;
 
     if (!dept.includes("All Departments")) {
         dept = dept.split(" | ")[0];
-        url += "&contracts[6]=org_name_en:" + dept;
+        url += "&contracts[2]=org_name_en:" + dept;
     }
 
     return encodeURI(url);
