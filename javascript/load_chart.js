@@ -143,7 +143,6 @@ dispatch.on("load_chart", function (chart_data) {
                 window.open(getContractsURL(d.key, d.type, d.year));    
             }
         }).on("mouseover", function() {
-            console.log("current color: " + $(this).css("fill"));
             d3.select(this).attr("fill", LightenDarkenColor(rgb2hex($(this).css("fill")), -15));
             d3.select(this).attr("stroke", LightenDarkenColor(rgb2hex($(this).css("fill")), 50)).attr("stroke-width","4px");
         }).on("mouseout", function() {
@@ -281,8 +280,48 @@ dispatch.on("load_chart", function (chart_data) {
 
 
 
+let filename = 'chart';
+let canvas = document.createElement('canvas');
 
 
+function downloadPNG() {
+  let svgHtml = document.getElementById('chart-bar').innerHTML.trim()
+  canvg(canvas,svgHtml)
+  let url = canvas.toDataURL('image/png')
+  let link = document.createElement('a')
+  link.href = url
+  link.download = filename
+  document.body.appendChild(link)
+  link.click()
+}
+
+
+
+
+
+
+function downloadPDF() {
+    var pdf = new jsPDF('p', 'mm', 'a4');
+    let svgHtml = document.getElementById('chart-bar').innerHTML.trim()
+    canvg(canvas,svgHtml)
+    var dataURL = canvas.toDataURL();
+    pdf.addImage(dataURL, 'JPEG', 20, 40, 168, 96); //addImage(image, format, x-coordinate, y-coordinate, width, height)
+
+    html2canvas(document.querySelector('#adv_tbl_wrapper')).then( canvas => {
+        var rowHeight = 8 + (12 * $("tbody tr").length)
+        pdf.addImage(canvas.toDataURL("image/png"),'PNG',18,150,168,rowHeight);
+        pdf.save('test.pdf');
+    });
+}
+
+
+// function downloadPDF() {
+//     html2canvas(document.querySelector('#visualizations')).then( canvas => {
+//         var pdf = new jsPDF('p', 'mm', 'a4');
+//         pdf.addImage(canvas.toDataURL("image/png"),'PNG',10,0,190,120);
+//         pdf.save('test.pdf');
+//     });
+// }
 
 
 
