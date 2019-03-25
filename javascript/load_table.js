@@ -102,7 +102,8 @@ dispatch.on("load_table", function (tbl_data) {
             if (d.column === "Series") {
                 window.open(getContractsTableURL(d.dept, $("#sel_year").val()));
             }
-        });
+        })
+        .attr("style", "cursor: pointer;");
 
     dispatch.on("update_table", function (d) {
 
@@ -162,7 +163,8 @@ dispatch.on("load_table", function (tbl_data) {
                 if (d.column === "Series") {
                     window.open(getContractsTableURL(d.dept, $("#sel_year").val()));
                 }
-            });
+            })
+            .attr("style", "cursor: pointer;");
 
 
         // append td if table doesn't exist (after selecting a department with no values for example)
@@ -181,7 +183,8 @@ dispatch.on("load_table", function (tbl_data) {
                 if (d.column === "Series") {
                     window.open(getContractsTableURL(d.dept, $("#sel_year").val()));
                 }
-            });
+            })
+            .attr("style", "cursor: pointer;");
 
         
 

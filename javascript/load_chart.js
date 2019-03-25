@@ -301,8 +301,13 @@ let canvas = document.createElement('canvas');
 
 function downloadPDF() {
     var pdf = new jsPDF('p', 'mm', 'a4');
+    
+    pdf.setFontType("bold");
     pdf.setFontSize(16);
     pdf.text(45, 30, 'Proactive Disclosure - Contracts Over $10k');
+
+    pdf.setFontSize(9);
+    pdf.text(25, 150, 'Year: ' + $('select#sel_year').val());
 
     html2canvas(document.querySelector('#chart-bar'), {scale: 1.5}).then( canvas => {
         pdf.addImage(canvas.toDataURL(), 'JPEG', 0, 50, 210, 90);
