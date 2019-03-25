@@ -251,8 +251,6 @@ dispatch.on("load_chart", function (chart_data) {
             //     }, 100);
             // }
         }).on("click", function(d, i) {
-            console.log("d: " + JSON.stringify(d));
-            //getContractsURL(d.key, d.type, d.year);
             if(d.type != "Other") {
                 window.open(getContractsURL(d.key, d.type, d.year));    
             }
@@ -309,11 +307,11 @@ function downloadPDF() {
     pdf.setFontSize(9);
     pdf.text(25, 150, 'Year: ' + $('select#sel_year').val());
 
-    html2canvas(document.querySelector('#chart-bar'), {scale: 1.5}).then( canvas => {
+    html2canvas(document.querySelector('#chart-bar'), {scale: 1.5}).then( function(canvas) {
         pdf.addImage(canvas.toDataURL(), 'JPEG', 0, 50, 210, 90);
     });
 
-    html2canvas(document.querySelector('#adv_tbl_wrapper'), {scale: 1.5}).then( canvas => {
+    html2canvas(document.querySelector('#adv_tbl_wrapper'), {scale: 1.5}).then( function(canvas) {
         var rowHeight = 8 + (12 * $("tbody tr").length)
         // make table size dynamic, depending on number of rows
         var tableWidth = ($('#adv_tbl_wrapper').width()*164)/1140; //got this formula by comparing with the size of a 1 row table first. 
