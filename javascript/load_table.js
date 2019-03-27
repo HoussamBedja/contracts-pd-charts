@@ -210,13 +210,13 @@ dispatch.on("load_table", function (tbl_data) {
             if(data.length > 0) {
                 var multiplier = 1;
  
-                if ( data.includes('K') ) {
+                if ( data.indexOf('k') > -1) {
                     multiplier = 1000;
                 }
-                else if ( data.includes('M') ) {
+                else if ( data.indexOf('M') > -1) {
                     multiplier = 1000000;
                 }
-                else if ( data.includes('B') ) {
+                else if ( data.indexOf('B') > -1) {
                     multiplier = 1000000000;
                 }
 
