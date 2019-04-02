@@ -277,26 +277,7 @@ dispatch.on("load_chart", function (chart_data) {
 
 
 
-let filename = 'chart';
-let canvas = document.createElement('canvas');
-
-
-// function downloadPNG() {
-//   let svgHtml = document.getElementById('chart-bar').innerHTML.trim()
-//   canvg(canvas,svgHtml)
-//   let url = canvas.toDataURL('image/png')
-//   let link = document.createElement('a')
-//   link.href = url
-//   link.download = filename
-//   document.body.appendChild(link)
-//   link.click()
-// }
-
-
-
-
-
-
+// Supported on all browsers except IE
 function downloadPDF() {
     var pdf = new jsPDF('p', 'mm', 'a4');
     
